@@ -7,7 +7,7 @@ dotenv.config();
 import { handleAddProblemToAppwrite, handleUserLogin } from './contollers/controllers.js';
 
 const app = express();
-const PORT = 8000;
+const PORT = process.env.PORT || 8000;
 
 const corsOptions = {
     origin: '*', 
